@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Frontend-Level 2</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/heroes/hero-1/assets/css/hero-1.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+        <style>
+            /* your CSS goes here*/
+.title {color: #fa9746;margin-bottom: 30px;position: relative;}
+.title::before {
+  position: absolute;
+  left: -29px;
+  top: 0;
+  height: 20px;
+  width: 20px;
+  transform: rotate(45deg);
+  background-color: #7499f1;
+  box-shadow: 0px 4px 4px 0px #aaa;
+  border-radius: 4px;
+  content: '';
+}
+.title::after {
+  position: absolute;
+  left: -19px;
+  top: 25px;
+  height: 14px;
+  width: 14px;
+  transform: rotate(45deg);
+  background-color: #7499f1;
+  box-shadow: 0px 4px 4px 0px #aaa;
+  border-radius: 4px;
+  content: '';
+}
+ /* services */
+.services {
+    padding:40px;
+  position: relative;
+}
+.services .square {
+  height: 100px;
+  width: 100px;
+  margin: 30px auto 40px;
+  position: relative;
+  border-radius: 15px;
+  transform: rotate(45deg);
+  padding: 10px;
+  background-color:#7499f1;
+  box-shadow: 0px 0px 27px 0px #ccc;
+  border: 2px dotted #eaf3fa;
+}
+.square i {
+  transform: rotate(315deg);
+  display: block;
+  color: #eaf3fa;
+  font-size: 40px;
+  padding-top: 17px;
+  padding-right: 14px;
+}
+.services .square::before {
+  position: absolute;
+  left: -10px;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #fa9746;
+  content: '';
+}
+.services .square::after {
+  position: absolute;
+  left: 50px;
+  top: 66px;
+  width: 1px;
+  height: 88%;
+  background-color:#fa9746;
+  content: '';
+  transform: rotate(90deg);
+}
+.services .serv .num
+ {
+   width: 60px;
+   height: 60px;
+   background-color: #7499f1;
+   box-shadow: 0px 0px 15px 0px #00a9d3;
+   margin: -38px auto 15px auto;
+   border-radius: 50%;
+   color: #fff;
+   font-size: 30px;
+    padding-top: 7px;
+    border: 1px dashed;
+  }
+.services .serv h5 {color: #fa9746;}
+.services .serv p {color: #777;}
+.services .serv hr {
+  width: 30px;
+  border-top: 3px solid rgb(0 169 211);
+}
+          .section-divider {
+  height: 4rem;
+  background-color: #dfdfdf;
+  border-style: solid;
+  border-color: #ccc;
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .15), inset 0 .125em .5em rgba(0, 0, 0, .2);
+}
+        </style>
+        
+    </head>
+
+    <body>
+        <!-- Nav -->
+        <nav style=" position: fixed; z-index: 10; width: 100%;"  class="navbar navbar-expand-lg bg-body-tertiary navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" >Software Talk</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Other/AboutUs.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Other/contact us.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Blogs
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item " href="/Front-End Posts/FrontEnd Posts.html">Frontend blog</a></li>
+                            <li><a class="dropdown-item" href="/Back-End Posts/BackEnd Posts.html">Backend blog</a></li>
+                            <li><a class="dropdown-item" href="/API Posts/API Posts.html">APIs blog</a></li>
+                            <li><a class="dropdown-item" href="/Database Posts/Database.html">Database blog</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="/Mobile Application Posts/Mobile App.html">Mobile Application blog</a></li>
+                            <li><a class="dropdown-item" href="/Desktop Application Posts/Desktop App.html">Desktop Application blog</a></li>
+                            <li><a class="dropdown-item" href="/AI Posts/AI.html">AI blog</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item">Coming Soon....</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <header>
+            <!-- place navbar here -->
+        </header>
+        <main>
+            <!-- Hero 1 - Bootstrap Brain Component -->
+<section id ="0" class="bsb-hero-1 px-3 bsb-overlay bsb-hover-pull" style="background-image: url('img/frontend level2.jpg');">
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-12 col-md-11 col-lg-9 col-xl-7 col-xxl-6 text-center text-white">
+          <h2 class="display-3 fw-bold mb-3"> Frontend-Level 2</h2>
+          <p class="lead mb-5">This level is very important to get good jop and start earn money, why we learn Level 2 before learn Back-end career? </p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button onclick="Scroll_1();" type="button" class="btn bsb-btn-xl btn-light gap-3">Read More</button>
+           <!-- In this level,you can start learning frontend languages(HTML-CSS-JS),and Learn about everything about Front-End Development. -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="1">
+    <br>
+  <div  class="services pd">
+    <div class="container">
+      <h3 class="title"> What we learn ? </h3>
+      <div class="row text-center">
+        <div class="col-md-3">
+          <div class="square"><i class="fas fa-code"> <img width="90px" src="img/skill.png" alt="" style="margin: -10px -10px 40px 20px;"></i></div>
+          <div class="serv">
+            <h5> Front-End Developer Skills</h5>
+            <p>The Languages and frameworks you must learn it if you want to work in Front-End Career.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="serv">
+            <div class="square"><i class="fas fa-cogs"><img width="80px" src="img/react.png" alt="" style="margin: -10px 50px 40px 15px;"></i></div>
+            <h5> Front-End Frameworks</h5>
+            
+            <p>The Languages you will use it to built your website
+              </p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="square"><i class="fas fa-globe"><img width="70px" src="img/businessman.png" alt="" style="margin: -10px -10px 40px 20px;"></i></div>
+          <div class="serv">
+            <h5>Front-End Jops</h5>
+          
+            <p>You will learn about the jops and salary in the champins</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="square"><i class="fas fa-user-shield"><img width="70px" src="img/front-end-programming.png" alt="" style="margin: 0px 10px 40px 20px;"></i></div>
+          <div class="serv">
+            <h5>Front-End Level 2</h5>
+            <p>how you can learn the frameworks and get Experience</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <div class="section-divider"></div>
+  <!-- Hero 2 -->
+
+<section class="container py-5 ">
+  <div class="row p-4 pb-0 pe-lg-0 border shadow-lg rounded-3">
+    <div class="mb-4 mb-lg-0 p-3 col-lg-7 p-lg-5 pt-lg-3">
+      <h1 class=" display-4 fw-bold">Front-End Developer Skills </h1>
+      <p class="lead">A skilled Front-End Developer combines creativity with technical expertise to build visually appealing and user-friendly websites. Core skills include proficiency in HTML, CSS, and JavaScript, along with modern frameworks like React or Vue.js or Angular. They must also understand responsive design, browser compatibility, performance optimization, and basic UI/UX principles. Beyond coding, strong problem-solving abilities and a commitment to continuous learning are essential in this fast-evolving field.</p>
+      
+    </div>
+    
+    
+    <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden">
+      <img src="img/Skills.png" alt="" class="shadow" width="80%">
+    </div>
+  </div>
+</section>
+<div class="section-divider"></div>
+<!-- Hero 2 -->
+
+<section class="container py-5 ">
+  <div class="row p-4 pb-0 pe-lg-0 border shadow-lg rounded-3">
+    <div class="mb-4 mb-lg-0 p-3 col-lg-7 p-lg-5 pt-lg-3">
+      <h1 class=" display-4 fw-bold">Front-End Frameworks </h1>
+      <p class="lead">Front-end frameworks play a crucial role in modern web development by streamlining the process of building responsive, dynamic, and maintainable user interfaces. Popular frameworks like React, Angular, and Vue.js offer powerful tools and reusable components that enhance development speed and consistency. These frameworks help developers manage complex UI logic, handle state efficiently, and create seamless user experiences across devices and platforms.</p>
+      
+    </div>
+    
+    
+    <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden">
+      <img src="img/FrameWorks.png" alt="" class="shadow" width="70%">
+    </div>
+  </div>
+</section>
+<div class="section-divider"></div>
+<!-- Hero 4 -->
+
+<section class="container px-4 my-5 py-5">
+  <div class="row gx-5 flex-wrap-reverse">   
+    <div class="col-lg-6 mt-5 mt-lg-0">
+      <h1 class="display-5 fw-bold mb-3">Front-End Jops</h1>
+      <p class="lead">
+        Front-end developer salaries vary based on experience, location, and the type of company. Entry-level developers can expect to earn competitive starting salaries, while experienced professionals with skills in modern frameworks like React or Angular often command higher pay. Tech giants like Google, Meta, and Microsoft offer attractive compensation packages, while startups and mid-sized companies may provide flexible work environments and growth opportunities. Freelancers and remote developers also enjoy diverse income streams depending on their portfolio and client base. Experience, a strong skill set, and staying current with industry trends are key to maximizing earnings in this field.
+      </p>
+      <div class="d-grid gap-2 d-md-flex">
+        <button class="btn btn-primary btn-lg px-4 me-sm-2" type="button">Primary</button>
+        <button class="btn btn-outline-secondary btn-lg px-4" type="button">Default</button>
+      </div>
+    </div>
+    
+    <div class="col-10 col-md-8 col-lg-6 d-flex align-items-center">
+      <img src="img/businessman.png" class="img-fluid" width="60%" style="margin: 0% 0% 0% 35%;">
+    </div>
+  </div>
+  
+  
+</section>
+<div class="section-divider"></div>
+<!-- Hero 5 -->
+
+<section class="my-5 px-4 pt-5 text-center border-bottom">
+  <h1 class="display-4 fw-bold mb-3">Front-End Level 2</h1>
+  <div class="col-lg-6 mx-auto">
+    <p class="lead mb-4">
+    We should start to specialize deeply in front-end development and it is recommended not to distract yourself between front-end and back-end at this time. Instead, focus entirely on front-end first, gain experience and a position, and then start learning back-end development in order to become a full-stack developer.
+    </p>
+   
+  </div>
+  <div class="overflow-hidden" style="max-height: 30vh;">
+      <div class="container px-5">
+        <img src="img/Front-Back.png"width="60%">
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+
+
+        </main>
+        <!-- footer -->
+    <footer>
+
+        <footer id="8" class="bg-body-tertiary text-center">
+            <!-- Grid container -->
+            <div class="container p-4">
+                <!-- Section: Form -->
+                <section class="">
+                    <form action="">
+                        <!--Grid row-->
+                        <div class="row d-flex justify-content-center">
+                            <!--Grid column-->
+                            <div class="col-auto">
+                                <p class="pt-2">
+                                    <strong>Sign up for our newsletter</strong>
+                                </p>
+                            </div>
+                            <!--Grid column-->
+
+                            <!--Grid column-->
+                            <div class="col-md-5 col-12">
+                                <!-- Email input -->
+                                <div data-mdb-input-init class="form-outline mb-4">
+
+                                    <input type="email" name="email" id="form5Example24" class="form-control" />
+
+                                </div>
+                            </div>
+
+
+                            <!--Grid column-->
+                            <div class="col-auto">
+                                <!-- Submit button -->
+
+                                <button type="button" class="btn btn-secondary"> Subscribe</button>
+                            </div>
+                            <!--Grid column-->
+                        </div>
+                        <!--Grid row-->
+                    </form>
+                </section>
+                <!-- Section: Form -->
+
+                <!-- Section: Text -->
+                <section class="mb-4">
+
+                </section>
+                <!-- Section: Text -->
+
+                <!-- Section: Links -->
+                <section class="">
+                    <!--Grid row-->
+                    <div class="row">
+                        <!--Grid column-->
+                        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase">The techlogy of web</h5>
+
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    <a class="text-body"  href="/Front-End Posts/FrontEnd Posts.html"style="text-decoration: none;">Frontend</a>
+                                </li>
+                                <li>
+                                    <a class="text-body" href="/Back-End Posts/BackEnd Posts.html"style="text-decoration: none;">Backend</a>
+                                </li>
+                                <li>
+                                    <a class="text-body" href="/API Posts/API Posts.html"style="text-decoration: none;">APIs</a>
+                                </li>
+                                <li>
+                                    <a class="text-body" href="/Database Posts/Database.html"style="text-decoration: none;">Database</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase"style="text-decoration: none;">Other Technologys</h5>
+
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    <a class="text-body" href="/Mobile Application Posts/Mobile App.html"style="text-decoration: none;">Mobile App</a>
+                                </li>
+                                <li>
+                                    <a class="text-body" href="/Desktop Application Posts/Desktop App.html"style="text-decoration: none;">Desktop App</a>
+                                </li>
+                                <li>
+                                    <a class="text-body" href="/AI Posts/AI.html" style="text-decoration: none;">AI</a>
+                                </li>
+                                <li>
+                                    <a class="text-body"  style="text-decoration: none;">Comming soon</a>
+                                </li>
+                                <br><br>
+                                
+                            </ul>
+                        </div>
+                   
+
+
+
+                        <!--Grid column-->
+                        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase">Contact Us</h5>
+
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    <a class="text-body" style="text-decoration: none;">Facebook</a>
+                                </li>
+                                <li>
+                                    <a class="text-body" style="text-decoration: none;">Whats app</a>
+                                </li>
+                                <li>
+                                    <a class="text-body" style="text-decoration: none;">Linked in</a>
+                                </li>
+                                <li>
+                                    <a class="text-body" style="text-decoration: none;">Gmail</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <button onclick="Scroll_0()" type="button" class="btn btn-success"> Go to The Top</button>
+                        <!--Grid column-->
+                    </div>
+                    <!--Grid row-->
+                </section>
+                <!-- Section: Links -->
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <div class="text-center p-3 bg-dark text-light" >
+                © 2025 Copyright:
+                <a class="text-reset fw-bold" style="text-decoration: none;">Engineer : Abdallah Mohamed Adel Ali </a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+    </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+        <script>
+           function Scroll_0(){
+                location.href = "#0";
+            }
+            function Scroll_1(){
+                location.href = "#1";
+            }
+        </script>
+    </body>
+</html>
